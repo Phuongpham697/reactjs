@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-6">
+                <h2 class="text-center">Quản lý sinh vien</h2>
+                <div class="form-group">
+                    <p>Mã sinh vien</p>
+                    <input type="text" class="form-control" id="maSinhVien">
+                    <span id="spanMaSinhVien" class="text-danger"></span>
+                    <span id="spanKyTu" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <p>Ten sinh vien</p>
+                    <input type="text" class="form-control" id="tenSinhVien">
+                    <span id="spanTenSinhVien" class="helper-text text-danger"></span>
+                    <span id="spanCheckTen" class="helper-text text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <p>Loại sinh viên</p>
+                    <select class="form-control" id="loaiSinhVien">
+                        <option value="Binh thuong">Binh thuong</option>
+                        <option value="khó khăn">khó khăn</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="form-group">
+                            <p>Điểm toán</p>
+                            <input type="text" class="form-control" id="diemToan" placeholder="">
+                            <span id="spanDiemToan" class="text-danger"></span>
+                            <span id="toanNumber" class="text-danger"></span>
+                            <span id="toanLength" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <p>Điểm lý</p>
+                            <input type="text" class="form-control" id="diemLy" placeholder="">
+                            <span id="spanDiemLy" class="text-danger"></span>
+                            <span id="lyNumber" class="text-danger"></span>
+                            <span id="lyLength" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <p>Điểm hóa</p>
+                            <input type="text" class="form-control" id="diemHoa" placeholder="">
+                            <span id="spanDiemHoa" class="text-danger"></span>
+                            <span id="hoaNumber" class="text-danger"></span>
+                            <span id="hoaLength" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <p>Điểm rèn luyện</p>
+                    <input type="text" class="form-control" id="diemRenLuyen" placeholder="">
+                </div>
+                <div class="form-group text-center">
+                    <button class="btn btn-success" id="button">Xác Nhận</button>
+                </div>
+            </div>
+            <div class="col-6">
+                <h2 class="text-center">Thong tin sinh vien</h2>
+                <p>Tên sinh viên: <span id="txtTenSinhVien" style="font-weight: bold;"></span></p>
+                <p>Mã sinh viên: <span id="txtMaSinhVien" style="font-weight: bold;"></span></p>
+                <p>Loại sinh viên: <span id="txtLoaiSinhVien" style="font-weight: bold;"></span></p>
+                <p>Điểm trung bình: <span id="txtDiemTrungBinh" style="font-weight: bold;"></span></p>
+                <p>Xếp loại: <span id="txtXepLoai" style="font-weight: bold;"></span></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="./models/validation.js"></script>
+    <script src="./models/component.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
